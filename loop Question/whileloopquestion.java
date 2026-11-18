@@ -9,8 +9,10 @@ public class whileloopquestion {
          }*/
 //Find the sum of digits of a number.
 Scanner sc= new Scanner(System.in);
-System.out.println("Enter a number");
-int num=sc.nextInt();
+System.out.print("Enter a number : ");
+int num1=sc.nextInt();
+System.out.print("Enter a second  number : ");
+int num2=sc.nextInt();
 /*int count =0;
 while (num>0) {
     num=num/10;
@@ -34,6 +36,23 @@ num=num/10;
    }
    System.out.println("reversed of digit --> "+ans);
 */
-//sum
+//sum of the digit 1-2+3-4.....n; even subtract and odd add
+/*int ans=0;
+for(int i =1;i<=num;i++){
+if (i%2==0) {
+   ans=ans-i;
+}
+else{
+   ans=ans+i;
+}
+}
+System.out.println("even subtract and odd add = "+ans);
+*/
+//give two number and find the a raised two the power.
+int ans=1;
+for(int i = 1; i<=num2;i++){
+ans=ans*num1;
+}
+System.out.println("multiply the power :"+ans);
    }
 }
